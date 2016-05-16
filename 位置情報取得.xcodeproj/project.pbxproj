@@ -14,6 +14,7 @@
 		7FC655AB1CD8CFD9001489BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC655A91CD8CFD9001489BB /* LaunchScreen.storyboard */; };
 		7FC655B61CD8CFD9001489BB /* ______Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC655B51CD8CFD9001489BB /* ______Tests.swift */; };
 		7FC655C11CD8CFD9001489BB /* ______UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC655C01CD8CFD9001489BB /* ______UITests.swift */; };
+		7FC655CF1CD8D6DF001489BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC655CE1CD8D6DF001489BB /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7FC655BC1CD8CFD9001489BB /* 位置情報取得UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "位置情報取得UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC655C01CD8CFD9001489BB /* ______UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "______UITests.swift"; sourceTree = "<group>"; };
 		7FC655C21CD8CFD9001489BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FC655CE1CD8D6DF001489BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FC655CF1CD8D6DF001489BB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		7FC655941CD8CFD9001489BB = {
 			isa = PBXGroup;
 			children = (
+				7FC655CE1CD8D6DF001489BB /* MapKit.framework */,
 				7FC6559F1CD8CFD9001489BB /* 位置情報取得 */,
 				7FC655B41CD8CFD9001489BB /* 位置情報取得Tests */,
 				7FC655BF1CD8CFD9001489BB /* 位置情報取得UITests */,
@@ -193,6 +197,7 @@
 				TargetAttributes = {
 					7FC6559C1CD8CFD9001489BB = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = U435EYR422;
 					};
 					7FC655B01CD8CFD9001489BB = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -397,10 +402,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "位置情報取得/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "YahooJapan.------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -408,10 +416,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "位置情報取得/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "YahooJapan.------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +493,7 @@
 				7FC655C71CD8CFD9001489BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FC655C81CD8CFD9001489BB /* Build configuration list for PBXNativeTarget "位置情報取得Tests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +502,7 @@
 				7FC655CA1CD8CFD9001489BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FC655CB1CD8CFD9001489BB /* Build configuration list for PBXNativeTarget "位置情報取得UITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +511,7 @@
 				7FC655CD1CD8CFD9001489BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
